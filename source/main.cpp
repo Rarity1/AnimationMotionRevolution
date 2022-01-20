@@ -31,7 +31,7 @@ extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Query(const SKSE::QueryInterface* a
 
 	REL::Version runtimeVersion = a_skse->RuntimeVersion();
 
-	if (runtimeVersion < SKSE::RUNTIME_1_5_39)
+	if (runtimeVersion.string() != "1-4-15-1")
 	{
 		logger::critical("Unsupported runtime version {}", runtimeVersion.string());
 

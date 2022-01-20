@@ -87,7 +87,7 @@ if (MSVC)
 	)
 endif()
 
-add_subdirectory("extern/CommonLibSSE" CommonLibSSE)
+add_subdirectory("../CommonLibSSE" CommonLibSSE)
 
 find_package(spdlog REQUIRED CONFIG)
 
